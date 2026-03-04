@@ -20,7 +20,7 @@ jobs:
           node-version: "20"
 
       - name: Install deploycheck
-        run: npm install -g .
+        run: cd deploycheck && npm install -g .
 
       - name: Run deploycheck
-        run: deploycheck validate
+        run: cd deploycheck && deploycheck validate
